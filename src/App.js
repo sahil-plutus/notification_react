@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home";
+import { Link } from "react-router-dom";
+
 
 function App() {
+  console.log('hello')
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
+      <div className="container d-flex justify-content-center align-items-center">
+        <Link className="btn btn-primary" to={'chat/india/'}>India ChatRoom <span className="bg-danger rounded-circle px-1">0</span></Link>
+        <Link className="btn btn-primary m-4" to={'chat/america/'}>America ChatRoom <span className="bg-danger rounded-circle px-1">0</span> </Link>
+        <Link className="btn btn-primary" to={'chat/china/'}>China ChatRoom <span className="bg-danger rounded-circle px-1">0</span> </Link>
+      </div>
     </div>
   );
 }

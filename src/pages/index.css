@@ -1,0 +1,6 @@
+.chat-box{
+    height: 500px;
+    overflow: scroll;
+    border: .1rem solid rgb(179, 179, 179);
+    border-radius: .5rem;
+}
